@@ -138,7 +138,7 @@ venv.bak/
 .idea/modules.xml
 .idea/*.iml
 .idea/modules
-*.iml
+/*.iml
 
 # CMake
 cmake-build-*/
