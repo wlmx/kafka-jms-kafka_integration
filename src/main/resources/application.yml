@@ -1,0 +1,24 @@
+jms:
+  brokerUrl: "tcp://localhost:61616"
+  requestQueue: request_queue
+  responseQueue: response_queue
+  timeout: 30000
+
+kafka:
+  requestTopic: request_topic
+  responseTopic: response_topic
+
+spring:
+  kafka:
+    consumer:
+      group-id: groupIdTest1
+      auto-offset-reset: earliest
+      enable-auto-commit: false
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+    producer:
+      batch-size: 16384
+      buffer-memory: 33554432
+      retries: 0
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer

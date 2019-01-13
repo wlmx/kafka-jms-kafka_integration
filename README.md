@@ -6,7 +6,9 @@
 
 см. com.example.demo.MessageProcessor
 
-Команды для старта kafka и отправки сообщения/просмотра топика:
+Команды для старта kafka/activeMq и отправки сообщения/просмотра топика:
+
+activemq.bat
 
 zookeeper-server-start.bat ../../config/zookeeper.properties
 kafka-server-start.bat ../../config/server.properties
